@@ -1,0 +1,12 @@
+PWD c:/Users/zhangzhen4/Desktop/Latex_su/Latex/articles
+INPUT c:/texlive/2018/texmf.cnf
+INPUT c:/texlive/2018/texmf-dist/web2c/texmf.cnf
+INPUT c:/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT c:/Users/zhangzhen4/Desktop/Latex_su/Latex/articles/tbrw2_app_optimization.tex
+OUTPUT tbrw2_app_optimization.log
+INPUT c:/texlive/2018/texmf-dist/tex/latex/base/article.cls
+INPUT c:/texlive/2018/texmf-dist/tex/latex/base/article.cls
+INPUT c:/texlive/2018/texmf-dist/tex/latex/base/size12.clo
+INPUT c:/texlive/2018/texmf-dist/tex/latex/base/size12.clo
+INPUT c:/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr12.tfm

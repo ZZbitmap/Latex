@@ -1,0 +1,20 @@
+\contentsline {section}{\numberline {1}引言}{4}
+\contentsline {subsection}{\numberline {1.1}插件历史}{4}
+\contentsline {subsection}{\numberline {1.2}开发背景}{4}
+\contentsline {subsection}{\numberline {1.3}软件名称}{4}
+\contentsline {subsection}{\numberline {1.4}术语和缩略语}{4}
+\contentsline {subsection}{\numberline {1.5}参考资料}{5}
+\contentsline {section}{\numberline {2}总体设计}{5}
+\contentsline {subsection}{\numberline {2.1}需求规定}{5}
+\contentsline {subsection}{\numberline {2.2}运行环境}{5}
+\contentsline {subsection}{\numberline {2.3}上下文定义}{5}
+\contentsline {subsection}{\numberline {2.4}PPAPI插件进程与其他进程关系图}{6}
+\contentsline {section}{\numberline {3}运行设计}{7}
+\contentsline {subsection}{\numberline {3.1}注册PPAPI插件}{7}
+\contentsline {subsection}{\numberline {3.2}PPAPI插件生命周期}{8}
+\contentsline {subsection}{\numberline {3.3}实现PPAPI Plugin}{8}
+\contentsline {subsubsection}{\numberline {3.3.1}基于C的实现}{8}
+\contentsline {subsubsection}{\numberline {3.3.2}基于C++的实现}{10}
+\contentsline {section}{\numberline {4}其他}{15}
+\contentsline {subsection}{\numberline {4.1}调用性能对比}{15}
+\contentsline {subsection}{\numberline {4.2}时序图}{16}

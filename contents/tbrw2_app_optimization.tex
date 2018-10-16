@@ -104,7 +104,7 @@ tbrw2应用开发人员
   \end{tabular}
   \end{center}
   \end{table}
-参考以上Android进程优先级，我们结合自身应用特点及兼容对外发布的接口，设置如下进程优先级，优先级从高到低：
+参考以上Android进程优先级，我们结合自身应用特点，设置如下进程优先级，优先级从高到低：
 \begin{table}[!htbp]      
   \begin{center}
   \caption{AM进程优先级}
@@ -113,7 +113,7 @@ tbrw2应用开发人员
   \hline                     
   优先级 & 简介\\
   \hline        
-  IMPORTANCE\_HOME_APP & 根应用进程：system\_ui应用。 \\ \hline
+  IMPORTANCE\_HOME\_APP & 根应用进程：system\_ui应用。 \\ \hline
   IMPORTANCE\_UNABLE\_TO\_KILL & 不可被kill进程：例如cross\_ui应用。 \\ \hline
   IMPORTANCE\_FOREGROUND & 前台进程：它表明用户正在与该进程进行交互操作。 \\  \hline 
   IMPORTANCE\_PERSISTED & 重要服务进程：persisted为true的服务进程。 \\ \hline
@@ -154,7 +154,7 @@ AM启动参数中设置recycle\_size = 80M和recycle\_critical\_size = 40M，不
   \end{tabular}
   \end{center}
   \end{table}
-\par 当状态由0变为1时,由1变为2，由0变为2时，运行MemoryRecycle()回收内存,若成功则返回继续监测内存，若未成功，则发送“shortage”广播，传递系统剩余内存大小及当前系统内存状态变化信息。
+\par 当状态由0变为1时,由1变为2，由0变为2时，运行MemoryRecycle()回收内存,若成功则返回继续监测内存，若未成功，则发送“tvos.broadcast.memory.shortage”广播，传递系统剩余内存大小及当前系统内存状态变化信息。
 其中date中传递剩余内存大小数据，extra\_data中传递系统状态变化信息。
 \subsection{AM kill后台应用时序图}
 \begin{figure}[H]
@@ -178,7 +178,7 @@ AM启动参数中设置recycle\_size = 80M和recycle\_critical\_size = 40M，不
   \includegraphics[width=\textwidth]{image/tbrw2_app_optimization/png/start_not_am_app.png}
   \caption{NotAMApp开机启动时序图}
 \end{figure}
-NotAMApp服务启动后创建一个线程去启动管理的应用，避免拖慢开机速度。
+NotAMApp服务启动后创建一个线程去启动管理的应用，避免拖慢开机速度。根据各平台的应用开启现状，在开启应用时需要sleep若干时间，避免占用CPU导致开机速度变慢。
 
 \subsection{NotAMApp退出重启流程}
 \begin{figure}[H]
